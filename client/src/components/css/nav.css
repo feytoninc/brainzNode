@@ -1,0 +1,85 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 10vh;
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    max-height: 100%;
+}
+
+nav ul li {
+    max-height: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+nav ul li a {
+    font-family: var(--Abel);
+    font-weight: bolder;
+    color: rgb(0, 0, 83);
+    font-size: 1.3rem;
+    max-height: 100%;
+}
+
+nav .nav-items li {
+    text-align: center;
+}
+
+nav .nav-items a {
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    align-items: center;
+    height: 100%;
+    display: flex;
+}
+
+nav .social li {
+    padding: 0.2rem;
+    background-color: rgb(50, 111, 151);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+nav .social a {
+    justify-self: middle;
+    text-align: center;
+    color: aliceblue;
+}
+
+nav .nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav ul:last-child {
+    padding-left: 3rem;
+}
+
+.nav ul:first-child {
+    padding-right: 2rem;
+}
+
+.nav.menu-displayed {
+    display: block;
+}
+
+.brand, .brand a {
+    padding: .5rem 2rem;
+    color: rgb(43, 43, 109);
+    cursor: pointer;
+}

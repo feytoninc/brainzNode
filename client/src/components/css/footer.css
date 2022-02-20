@@ -1,0 +1,109 @@
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    background-color: rgb(46, 46, 85);
+    color: white;
+    width: 100%;
+}
+
+footer div {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+}
+
+footer .info p {
+    padding: 0rem 2rem;
+}
+
+footer .info ul {
+    display: flex;
+    margin: 1rem auto;
+    background-color: rgb(63, 57, 57);
+    width: fit-content;
+    padding: 1rem 0rem;
+    border-radius: 10px;
+
+}
+
+footer .info ul li a {
+    padding: 0rem 1rem;
+    color: white;
+    transition: .3s all;
+}
+
+footer .info ul li a:hover {
+    color: rgb(0, 153, 38);
+    transition: .3s;
+}
+
+footer .links {
+    /* text-align: left; */
+    margin-left: 2rem;
+    padding: 1rem 0rem;
+}
+
+footer .links a {
+    color: rgb(125, 255, 175);
+    /* text-align: left; */
+    padding: 1rem;
+    font-family: var(--Lexend);
+    font-size: 1.1rem;
+
+}
+
+footer .form form {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: white;
+}
+
+footer .form p {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+footer .form form input {
+    display: block;
+    margin: .3rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--Josefin);
+    font-weight: bolder;
+    color: rgb(36, 9, 9);
+    background-color: rgb(53, 53, 53);
+    border: 1px solid grey;
+}
+
+footer .form form input::placeholder {
+    color: white;
+    font-weight: 1.2rem;
+}
+
+footer .form form input:focus {
+    border: 1px solid grey;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    color: black;
+    background-color: rgba(117, 112, 112, 0.644);
+    border: 1px solid rgb(0, 0, 0) !important;
+    transition: .2s all;
+
+}
+
+/* Footer */
