@@ -4,3 +4,4 @@ deployment:
     - export DEPLOYPATH=/home2/brainz/public_html/development/
     - /bin/cp -R public $DEPLOYPATH
     - npm install
+    # install dependencies
