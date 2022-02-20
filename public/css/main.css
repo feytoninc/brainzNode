@@ -224,3 +224,7 @@ ul li span {
         transform: rotate(90deg);
     }
 }
+
+.txt {
+    font-size: 1rem;
+}

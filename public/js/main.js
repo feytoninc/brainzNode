@@ -3,7 +3,7 @@ const min = sec * 60;
 const hour = min * 60;
 const day = hour * 24;
 
-const end = new Date("Feb 25, 2022 12:00:00").getTime();
+const end = new Date("Feb 28, 2022 12:00:00").getTime();
 
 const int = setInterval(() => {
   const current = new Date().getTime();
@@ -20,9 +20,9 @@ const int = setInterval(() => {
   );
 
   if (remaining < 0) {
-    document.querySelector("h1").innerText = "We Have Arrived!";
-    document.querySelector("p").innerHTML =
-      "The big day is finally here - view our <a href=https://www.brainz.com>website<a/> for more information.";
+    document.querySelector(".launch-txt").innerText = "We Have Arrived!";
+    document.querySelector(".txt").innerHTML =
+      "The big day is finally here - view our <a href=https://www.brainz.com>website</a> for more information.";
     const digit = document.querySelectorAll("span");
     digit.forEach((digit) => {
       digit.innerText = "0";
