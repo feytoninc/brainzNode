@@ -2,6 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/brainz/public_html/development/
-    - /bin/cp -R public $DEPLOYPATH
     - npm install
-    # install dependencies
+    - npm run build
+    - /bin/cp -R client/build $DEPLOYPATH
