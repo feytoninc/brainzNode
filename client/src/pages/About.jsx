@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <>
       <Navbar></Navbar>
-      <main>
+      <main className="min-h-screen">
         <AboutUsDiv></AboutUsDiv>
         <Team></Team>
       </main>

@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./css/nav.css";
 
 export const socials = [
@@ -19,34 +19,54 @@ function Navbar() {
     { name: "About", link: "/about" },
     { name: "BBHUB", link: "/bbhub" },
   ];
+  const [isOpen, setisOpen] = useState(false);
+  const handleOpen = () => {
+    setisOpen(!isOpen);
+  };
 
   return (
-    <nav className="bg-gray shadow-lg">
+    <nav className="bg-gray shadow-lg md:overflow-hidden">
       <div className="brand px-4 font-extrabold">
         <Link to="/">
           <h2>BRAINZ</h2>
         </Link>
       </div>
-      <div className="div nav-toggle mobile">
-        <i className="fa fa-bars"></i>
+      <div
+        className="sm:hidden xs:block absolute right-0 top-0 px-3 p-y2"
+        onClick={handleOpen}
+      >
+        {isOpen ? (
+          <i className="fa fa-close fa-lg"></i>
+        ) : (
+          <i className="fa fa-bars fa-lg"></i>
+        )}
       </div>
-      <div className="flex justify-between flex-wrap" id="nav-bar">
-        <ul className="nav-items">
+      <div
+        className="sm:flex sm:justify-between sm:flex-wrap xs:block"
+        id="nav-bar"
+      >
+        <ul className="nav-items xs:block">
           {navsObject.map((nav) => {
             return (
               <li
                 key={nav.name}
-                className="text-center px-4 py-0 flex align-items-center"
+                className="text-center flex align-items-center"
               >
-                <Link to={nav.link} className="py-2">
+                <NavLink
+                  to={nav.link}
+                  className={
+                    "px-4 flex align-center " +
+                    ((navData) => (navData.isActive ? " active" : " none"))
+                  }
+                >
                   {nav.name}
-                </Link>
+                </NavLink>
               </li>
             );
           })}
         </ul>
       </div>
-      <ul className="social pr-4">
+      <ul className="social pr-4 xs:block">
         {socials.map((social) => {
           return (
             <li key={social.name} className="mx-1 flex align-middle">
