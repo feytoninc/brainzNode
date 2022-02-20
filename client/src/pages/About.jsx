@@ -1,19 +1,17 @@
 import React from "react";
-import Footer from "../components/Footer";
-import HomeHero from "../components/HomeHero";
 import Navbar from "../components/Navbar";
-import WhyCard from "../components/why";
-import "./css/hero.css";
+import Footer from "../components/Footer";
+import Team from "../components/Team";
+import AboutUsDiv from "../components/AboutUsDiv";
 
 function HomePage() {
   return (
     <>
       <Navbar></Navbar>
       <main>
-        <HomeHero></HomeHero>
-        <WhyCard></WhyCard>
+        <AboutUsDiv></AboutUsDiv>
+        <Team></Team>
       </main>
-
       <Footer></Footer>
     </>
   );
