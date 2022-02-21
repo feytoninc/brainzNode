@@ -46,7 +46,7 @@ function Team() {
     <div className="p-4">
       <p className="text-center text-3xl font-bold text-gray-800">Our Team</p>
       <p className="text-center mb-32 text-xl font-normal text-gray-500">
-        Meat the behind the project
+        Meet the brainz behind the project
       </p>
       <div className="flex items-center space-y-24 md:space-y-0 flex-col md:flex-row justify-evenly flex-wrap">
         {teamMembers.map((member) => {
