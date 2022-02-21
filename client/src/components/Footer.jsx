@@ -1,15 +1,18 @@
 import React from "react";
 import { socials } from "./Navbar";
-import "./css/footer.css"
+import "./css/footer.css";
 
 function Footer() {
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+  }
   return (
     <footer>
       <div className="info">
-        <h2>BRAINZ</h2>
-        <p>
-          Breaking Barriers & Building Bridges. Inspiring girls and women to be
-          successful in every aspect of their lives
+        <h2 className="font-bold">BRAINZ</h2>
+        <p className="text-justify">
+          Breaking Barriers and Building Bridges. Inspiring girls and women to
+          be successful in every aspect of their lives
         </p>
         <div className="social-buttons">
           <ul>
@@ -17,7 +20,7 @@ function Footer() {
               return (
                 <li key={social.name}>
                   <a href={social.link} target="_blank" rel="noreferrer">
-                    <i className={`fab fa-${social.name}`}></i>
+                    <i className={`fab fa-${social.name} fa-lg`}></i>
                   </a>
                 </li>
               );
@@ -26,7 +29,7 @@ function Footer() {
         </div>
       </div>
       <div className="links">
-        <h2>Our Contact</h2>
+        <h2 className="font-bold">Our Contact</h2>
         <ul>
           <li>
             <a href="tel:+250784157708">+250784 157 708</a>
@@ -37,9 +40,9 @@ function Footer() {
         </ul>
       </div>
       <div className="form">
-        <h2>Our Newsletter</h2>
+        <h2 className="font-bold">Our Newsletter</h2>
         <p>Receive our updates directly into your inbox</p>
-        <form action="#here">
+        <form onSubmit={handleSubmit}>
           <input type="email" name="name" id="name" placeholder="Your Name" />
           <input
             type="email"
@@ -47,7 +50,7 @@ function Footer() {
             id="email"
             placeholder="Your Email"
           />
-          <button className="btn" type="submit" id="form-submit">
+          <button className="py-2 px-4 rounded-md border-2" type="submit" id="form-submit">
             Subscribe
           </button>
         </form>

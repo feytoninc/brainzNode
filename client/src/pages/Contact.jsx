@@ -5,7 +5,9 @@ function HomePage() {
   return (
     <>
       <Navbar></Navbar>
-      <h2 className="text-black">Contact Page</h2>
+      <main className="min-h-screen flex align-items-center justify-center align-middle">
+        <h2 className="text-black text-4xl font-bold">Contact Page</h2>
+      </main>
       <Footer></Footer>
     </>
   );
